@@ -1,0 +1,19 @@
+.dots_generator {
+  width: 150px;
+  height: 150px;
+
+  
+}
+
+@keyframes rotate {
+   from {
+     transform: rotate(0deg);
+   }
+   to {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ .rotating_logo {
+   animation: rotate 2s linear infinite;
+ }
