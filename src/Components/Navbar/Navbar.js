@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 // import { Link as RouterLink } from 'react-router-dom'; // For navigation
-import logo from './../../Images/logo.png';
+import logo from '../../assets/img/logo.png';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);  

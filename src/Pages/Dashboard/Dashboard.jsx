@@ -4,12 +4,13 @@ import Expenses from './Expenses/Expenses'
 import HomeSection from '../Dashboard/Home/index'
 import NavBar from '../../Components/Navbar/Navbar'
 import Income from './Income/Income'
+import Header from '../../Components/Header/Header'
 
 
 const Dashboard = ({ section }) => {
     return (
         <div>
-            <NavBar dashboard={true} />
+            <Header dashboard={true} />
             <div className="flex mt-[85px] gap-6">
                 <div className="w-[220px] p-10 bg-primary fixed h-screen -mt-[85px]">
                     <SideBar section={section} />
