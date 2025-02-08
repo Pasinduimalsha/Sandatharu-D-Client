@@ -11,6 +11,7 @@ import Home from "../Pages/Home/Home";
 import NoUrl from "../Pages/404/noUrl";
 import Expenses from "../Pages/Dashboard/Expenses/Expenses";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import RoomDetails from "../Pages/RoomDetails/roomDetails";
 
 const router1 = createBrowserRouter([{
   path: "/",
@@ -18,7 +19,9 @@ const router1 = createBrowserRouter([{
   children: [{
     index: true,
     element: <Home />
-  }, {
+  }
+  ]
+},{
     element: <UserProtected />,
     children: [
       {
@@ -26,7 +29,7 @@ const router1 = createBrowserRouter([{
         element: <User />,
       },
       {
-        path: "dashboard",
+        path: "/dashboard",
         children: [
           { index: true, element: <Dashboard section="home" /> },
           { path: "expenses", element: <Dashboard section="expenses" /> },
@@ -34,8 +37,10 @@ const router1 = createBrowserRouter([{
         ],
       },
     ]
-  }
-  ]
+},
+{
+  path: '/room/:id',
+  element: <RoomDetails />,
 },
 {
   path: "/Login",

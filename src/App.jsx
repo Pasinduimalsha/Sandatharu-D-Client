@@ -1,12 +1,16 @@
 import AppRouter from "./Routers/AppRouters";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import RoomProvider from "../src/context/RoomContext";
 
 function App() {
   return (
     <div >
-    <ToastContainer />
-     <AppRouter />
+      <RoomProvider>
+      <ToastContainer />
+      <AppRouter />
+      </RoomProvider>
+   
     </div>
   );
 }
