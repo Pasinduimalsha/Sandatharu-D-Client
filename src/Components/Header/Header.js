@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import sadatharu from '../../assets/img/sandatharu.jpg'
 
 const Header = () => {
   const [header, setHeader] = useState(false)
@@ -20,13 +22,11 @@ const Header = () => {
       <div className='container mx-auto flex flex-col items-center gap-y-6 lg:flex-row lg:justify-between lg:gap-y-0'>
         <a href='/'>
           {header ? (
-            <p className='text-2xl text-center font-bold text-gray-800 uppercase font-primary tracking-[2px] max-w-[920px] lg:text-[16px] leading-tight'>
-              Kobicypher
-            </p>
+           
+            <img src={sadatharu} alt='logo' className='h-11 text-2xl text-center font-bold text-gray-800 uppercase font-primary tracking-[2px] max-w-[920px] lg:text-[16px] leading-tight' />
+            
           ) : (
-            <p className='text-2xl text-center font-bold text-white uppercase font-primary tracking-[2px] max-w-[920px] lg:text-[16px] leading-tight'>
-              Kobicypher
-            </p>
+            <img src={sadatharu} alt='logo' className='h-20 w-20 text-center font-bold text-gray-800 uppercase font-primary tracking-[2px] max-w-[920px] lg:text-[16px] leading-tight' />
           )}
         </a>
 
@@ -42,25 +42,27 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a href='#about' className='hover:text-gray-400'>
+              <a href='#Rooms' className='hover:text-gray-400'>
                 Rooms
               </a>
             </li>
             <li>
-              <a href='#services' className='hover:text-gray-400'>
+              <a href='#restaurant' className='hover:text-gray-400'>
                 Restaurant
               </a>
             </li>
-            <li>
-              <a href='#portfolio' className='hover:text-gray-400'>
-                Spa
-              </a>
-            </li>
+            
             <li>
               <a href='#contact' className='hover:text-gray-400'>
                 Contact
               </a>
             </li>
+            <li>
+              <Link to='/dashboard' className='hover:text-gray-400'>
+                Dashboard
+              </Link>
+            </li>
+
           </ul>
         </nav>
       </div>

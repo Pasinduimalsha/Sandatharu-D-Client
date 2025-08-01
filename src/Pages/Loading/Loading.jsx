@@ -1,18 +1,18 @@
 
-import Style from './loading.module.css'; //This  is very importent // CsS MODULE SYSTEM
-// import logo from '../../images/Red_Cypher_Logo.png';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 
 const Loading = () => {
   return (
     <div className="relative top-0 left-0 flex flex-col w-screen h-screen items-center justify-center  z-50 gap-3"
-    style={{ backgroundImage: 'linear-gradient(60deg, #000000 0%, #350101 100%)' }}>
+   >
+    <DotLottieReact
+      src="https://lottie.host/a5f450a8-1518-4ff5-9120-16ec18dfd4d5/5gAG54xqje.lottie"
+      loop
+      autoplay
+      style={{ width: '300px', height: '300px' }}
+    />
  
- <div className={Style.dots_generator}>
- {/* <img  src={logo} alt='logo' className={Style.rotating_logo} /> */}
- </div>
-
-
 </div>
   );
 };

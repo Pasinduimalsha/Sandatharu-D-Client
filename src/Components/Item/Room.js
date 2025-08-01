@@ -17,9 +17,9 @@ const Room = ({ room }) => {
       </div>
       
       {/* Room Details */}
-      <div className='bg-white shadow-lg max-w-[300px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center
+      <div className='bg-white shadow-lg max-w-[350px] mx-auto h-[60px] -translate-y-1/2 flex justify-center items-center
       uppercase font-tertiary tracking-[1px] font-semibold text-base'>
-        <div className='flex justify-between w-[80%]'>
+        <div className='flex justify-between items-center w-full sm:w-[80%]'>
           {/* Size */}
           <div className='flex items-center gap-x-2'>
             <div className='text-accent'>
@@ -45,6 +45,7 @@ const Room = ({ room }) => {
             </div>
 
           </div>
+
         </div>
       </div>
       {/* name & description */}

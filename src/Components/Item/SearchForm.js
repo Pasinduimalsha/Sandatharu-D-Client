@@ -15,7 +15,6 @@ const SearchForm = () => {
     <form className='h-[300px] w-full lg:h-[70px] hidden md:block bg-transparent' onSubmit={handleSubmit}>
       <div className='flex flex-col w-full h-full lg:flex-row'>
         <div className='w-full'>
-
           <input
             type="text"
             placeholder='Explore our Luxurious rooms...'
