@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 // import { Link as RouterLink } from 'react-router-dom'; // For navigation
 import logo from '../../assets/img/logo.png';
 
+
 const Navbar = () => {
   const [nav, setNav] = useState(false);  
 
@@ -122,15 +123,16 @@ const Navbar = () => {
               Contact
             </Link>
           </li>
-          {/* <li className="text-center py-2 lg:py-0">
-            <RouterLink
+          <li className="text-center py-2 lg:py-0">
+            <Link
               to="/expenses"
               className="hover:text-gray-400 cursor-pointer"
               onClick={() => setMenuOpen(false)}
             >
               Expenses
-            </RouterLink>
-          </li> */}
+            </Link>
+          </li>
+          
         </ul>
       </div>
     </nav>

@@ -11,11 +11,10 @@ const MainLayOut = () => {
 
   return (
    <div>
-    <Header/>
+    {/* <Header/> */}
     <Outlet/>
-    <Footer/>
+    {/* <Footer/> */}
    
-    
    </div>
   )
 }
